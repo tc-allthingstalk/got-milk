@@ -46,11 +46,11 @@ h1 {
   width: 250px;
 }
 
-.milk__bottle.zero   img .bottle { content:url(../images/milk_0.svg)  }
-.milk__bottle.twenty img .bottle { content:url(../images/milk_20.svg) }
-.milk__bottle.forty  img .bottle { content:url(../images/milk_40.svg) }
-.milk__bottle.sixty  img .bottle { content:url(../images/milk_60.svg) }
-.milk__bottle.eighty img .bottle { content:url(../images/milk_80.svg) }
+.milk__bottle.zero   img.bottle { content:url(../images/milk_0.svg)  }
+.milk__bottle.twenty img.bottle { content:url(../images/milk_20.svg) }
+.milk__bottle.forty  img.bottle { content:url(../images/milk_40.svg) }
+.milk__bottle.sixty  img.bottle { content:url(../images/milk_60.svg) }
+.milk__bottle.eighty img.bottle { content:url(../images/milk_80.svg) }
 
 .milk__bottle.one-hundred img.bottle,
 .milk__bottle img.bottle { content:url(../images/milk_100.svg); }
@@ -110,7 +110,7 @@ h1 {
   -webkit-mask: url(../images/milky_wave.svg) top left / cover;
   -webkit-mask-repeat: repeat-x;
 
-  -webkit-animation: wave 5s linear infinite;
+  -webkit-animation: wave 2s linear infinite;
 
   position: relative;
 }
