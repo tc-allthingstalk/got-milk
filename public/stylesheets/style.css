@@ -107,15 +107,9 @@ h1 {
   width: 100%;
   height: 15px;
 
-  /*background-image: url(../images/milky_wave.svg);
-  background-size: contain;
-  background-repeat: repeat-x;
-  background-position-x: -680px;*/
-
   -webkit-mask: url(../images/milky_wave.svg) top left / cover;
   -webkit-mask-repeat: repeat-x;
 
-  /* animation */
   -webkit-animation: wave 5s linear infinite;
 
   position: relative;
