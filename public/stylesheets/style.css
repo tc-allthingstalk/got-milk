@@ -1,0 +1,142 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #e74c3c;
+
+  text-rendering: optimizeLegibility;
+
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.5em 0 0.25em 0;
+}
+
+.intro {
+  text-align: center;
+  color: white;
+}
+
+.intro .milk-pun {
+
+}
+
+.milk__bottle {
+  left: 50%;
+  top: 50%;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  position: absolute;
+
+  height: 400px;
+  width: 250px;
+}
+
+.milk__bottle.zero   img .bottle { content:url(../images/milk_0.svg)  }
+.milk__bottle.twenty img .bottle { content:url(../images/milk_20.svg) }
+.milk__bottle.forty  img .bottle { content:url(../images/milk_40.svg) }
+.milk__bottle.sixty  img .bottle { content:url(../images/milk_60.svg) }
+.milk__bottle.eighty img .bottle { content:url(../images/milk_80.svg) }
+
+.milk__bottle.one-hundred img.bottle,
+.milk__bottle img.bottle { content:url(../images/milk_100.svg); }
+
+.milk__bottle > img.bottle {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  z-index: 2;
+}
+
+.the-milk__container {
+  position: absolute;
+
+  left: 13%;
+  bottom: 8px;
+
+  height: auto;
+  width: 75%;
+
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+
+  z-index: 1;
+}
+
+.the-milk,
+.the-milky-wave {
+  background-color: #FAF0E8;
+  /*background-color: lightblue;*/
+}
+
+.the-milk {
+  width: 185px;
+  height: 187.5px; /* max-value 250px, min-value 30px */
+
+  position: relative;
+
+  -webkit-transition: height 300ms;
+  transition: height 300ms;
+
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.the-milky-wave {
+  width: 100%;
+  height: 15px;
+
+  /*background-image: url(../images/milky_wave.svg);
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position-x: -680px;*/
+
+  -webkit-mask: url(../images/milky_wave.svg) top left / cover;
+  -webkit-mask-repeat: repeat-x;
+
+  /* animation */
+  -webkit-animation: wave 5s linear infinite;
+
+  position: relative;
+}
+
+@-webkit-keyframes wave {
+  from { -webkit-mask-position-x: 0%; }
+  to { -webkit-mask-position-x: -157px; }
+}
+
+.percentage {
+  font-family: "Lato";
+  font-size: 50px;
+  font-weight: 600;
+
+  position: absolute;
+  top: 20%;
+  left: 50%;
+
+  width: 180px;
+  margin-left: -90px;
+
+  text-align: center;
+}
