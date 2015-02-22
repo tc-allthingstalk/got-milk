@@ -11,13 +11,20 @@ function randomPun() {
   var puns = [
     'Leaves you wanting mooo-re!',
     'Udderly amazing!',
-    'Vitamins, you don\'t want to lactose',
+    // 'Vitamins, you don\'t want to lactose',
+    'Milk-stash-tic!',
     'You should have an udder one',
     'I dairy you to drink mooo-re',
     'You will cow-l for more',
     'Cow-nting down to zero',
     'Pour some in your decalf coffee',
-    'Lege-ndairy stuff'
+    'Legen-dairy stuff',
+  ];
+
+  var puns_empty = [
+    'I’m dairy sorry, but you’re out of milk',
+    'No whey, you finished the whole bottle!',
+    'Better cream for a refill!',
   ];
 
   var rand = Math.floor(Math.random() * puns.length);
