@@ -61,7 +61,10 @@ h1 {
   position: absolute;
   z-index: 2;
 
-  background-size: 100% 100%;
+  /*background-size: 100% 100%;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .the-milk__container {
@@ -129,7 +132,7 @@ h1 {
   /*text-shadow: 7px 5px 0 rgba(0,0,0,0.1);*/
 
   position: absolute;
-  top: 36%;
+  top: 30%;
   left: 50%;
 
   width: 180px;
