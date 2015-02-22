@@ -46,14 +46,13 @@ h1 {
   width: 250px;
 }
 
+.milk__bottle             img.bottle { content:url(../images/milk_100.svg) }
 .milk__bottle.zero   img.bottle { content:url(../images/milk_0.svg)  }
 .milk__bottle.twenty img.bottle { content:url(../images/milk_20.svg) }
 .milk__bottle.forty  img.bottle { content:url(../images/milk_40.svg) }
 .milk__bottle.sixty  img.bottle { content:url(../images/milk_60.svg) }
 .milk__bottle.eighty img.bottle { content:url(../images/milk_80.svg) }
-
-.milk__bottle.one-hundred img.bottle,
-.milk__bottle img.bottle { content:url(../images/milk_100.svg); }
+.milk__bottle.one-hundred img.bottle { content:url(../images/milk_100.svg) }
 
 .milk__bottle > img.bottle {
   height: 100%;
@@ -91,7 +90,7 @@ h1 {
 }
 
 .the-milk {
-  width: 185px;
+  width: 100%;
   height: 187.5px; /* max-value 250px, min-value 30px */
 
   position: relative;
