@@ -18,6 +18,7 @@ function randomPun() {
     'You will cow-l for more',
     'Cow-nting down to zero',
     'Pour some in your decalf coffee',
+    'Mmh, ice cow-ld!',
     'Legen-dairy stuff',
   ];
 
