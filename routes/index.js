@@ -20,7 +20,8 @@ function randomPun() {
     'Pour some in your decalf coffee',
     'Mmh, ice cow-ld!',
     'Legen-dairy stuff',
-    'Cow-dy partner'
+    'Cow-dy partner',
+    'Minimum veal-able product',
   ];
 
   var puns_empty = [
