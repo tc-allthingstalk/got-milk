@@ -66,3 +66,36 @@ function updateMilk(val) {
   bottle.removeClass(expressions.join(' '));
   bottle.addClass(expression);
 }
+
+
+var relayr = RELAYR.init({
+  appId: "aafaa8a6-58b5-4f8a-9485-018846e695f3",
+  redirectUri:"http://localhost"
+});
+
+/*
+    Ugly smugly JS web client integration
+*/
+
+relayr.login({
+  success: function(token){
+  console.log("Relayr JS Client connected")
+  }
+});
+
+ relayr.devices().getDeviceData({
+    deviceId: "6c165856-aeb1-4c45-a779-bce18a7a1044", 
+    token: "jpWnlsJTYBMXmyTjJIq8b4zOS2vYrWw6",
+    incomingData: function(data){
+      var i = data.readings[1].value.y;
+      var j = (i*100);
+      console.log("Accelerometer, y_axis: " + j);
+      tilt(j);
+    }
+  });
+
+function tilt(input){
+  var pw = $('#milk__bottle');
+  console.log("milk tilt value: " + input);
+            pw.css({'transform': 'rotate('+input+'deg)'});
+}
